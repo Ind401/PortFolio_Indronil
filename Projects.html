@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Indronil's Projects and Internships</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    </head>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+                background-color: rgb(0, 0, 33);
+                color: white;
+                font-family: "Poppins", sans-serif;
+            }
+            nav{
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                height: 80px;
+                background-color: rgb(3, 3, 63);
+           }
+           nav ul{
+            display: flex;
+            justify-content: center;
+           }
+           nav ul li{
+            list-style: none;
+            margin: 0 23px;
+           }
+           nav ul li a{
+            text-decoration: none;
+            color: white;
+           }
+           nav ul li a:hover{
+            color: rgb(153, 153, 226);
+            font-size: 1.01rem;
+           }
+           .down{
+        justify-content: space-around;
+        margin: 80px 80px;
+       }
+           .accordion {
+              width: 800px;
+              margin: 90px auto;
+             color: white;
+            padding: 45px 45px;
+        }
+        .accordion .container {
+  position: relative;
+  margin: 10px 10px;
+}
+
+.accordion .label {
+  position: relative;
+  padding: 10px 0;
+  font-size: 25px;
+  color:  white;
+  cursor: pointer;
+}
+.accordion .label::before {
+  content: '+';
+  color:  white;
+  position: absolute;
+  top: 50%;
+  right: -5px;
+  font-size: 30px;
+  transform: translateY(-50%);
+}
+
+
+.accordion .content {
+  position: relative;
+  height: 0;
+  font-size: 15px;
+  text-align: justify;
+  width: 780px;
+  overflow: hidden;
+  transition: 0.5s;
+}
+
+
+.accordion hr {
+  width: 100;
+  margin-left: 0;
+  border: 1px solid grey;
+}
+.accordion .container.active .content {
+  height: 150px;
+}
+
+.accordion .container.active .label::before {
+  content: '-';
+  font-size: 30px;
+}
+
+    </style>
+    <body>
+        <header>
+            <nav>
+                <div class="left">Indronil Ganguly's Portfolio</div>
+                <div class="right">
+                    <ul>
+                        <li><a href="index.html">About</a></li>
+                        <li><a href="skills.html">Skills</a></li>
+                        <li><a href="Education.html">Education</a></li>
+                        <li><a href="Projects.html">Personal Projects and Internships</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <section class="down">
+            <div class="accordion-body">
+                <div class="accordion">
+            <h1>Internships</h1>
+        <hr>    
+    <div class="container">
+      <div class="label"> Simplbyte: Trainee and Intern (April 2023- May 2023)</div>
+      <div class="content"> Leveraging my hands-on experience with core Java programming concepts, I embarked on a Level-1 project using tools like Eclipse EE. Developed two interactive games Hangman and Tic-Tac-Toe using core Java concepts learned through self-study.</div>
+    </div>
+    
+    <div class="container">
+      <div class="label">Acmegrade: Trainee and Intern( March 2022– May 2022)</div>
+      <div class="content"> Experimented with UNO and NodeMCU to acquire foundational knowledge in hardware-based programming, resulting in the successful execution of interactive projects and the ability to troubleshoot technical issues effectively. Engineered a Water Level Controlling System prototype, utilizing ultrasonic sensors to maintain water levels in tanks and reservoirs, saving an average of 30 percent water usage in agriculture.
+</div>
+    </div>
+    <hr>
+            <h2>Projects</h2>
+        <hr>    
+    <div class="container">
+      <div class="label">  iEducate Level-1 project(Frontend)</div>
+      <div class="content">  Developed a responsive website using HTML, CSS, and JavaScript. This website adapts seamlessly to different screen sizes, ensuring optimal viewing experiences on laptops, mobiles, and tablets. This project prioritizes a user-friendly experience across devices. The website’s layout adjusts automatically to different screen sizes, ensuring easy navigation and readability on various devices, including laptops, mobiles, and tablets.</div>
+    </div>
+    
+    <div class="container">
+      <div class="label">IOT based smart helmet for workers safety</div>
+      <div class="content"> Developed a comprehensive Internet of Things (IoT) safety system using Node MCU, Arduino Uno, and various sensors. This system is designed to significantly enhance worker safety in mines and construction sites.Technical Skills Employed: Microcontroller Programming,Sensor Integration and Circuit Design.This project has potential to reduce worker injury rates by 65 percent through its ability to Dectect Hazardous conditions in real time, Trigger alarms and warnings, Enable preventative safety measures.</div>
+    </div>
+    <hr>
+                </div>
+            </div>
+        </section>
+        <script src="app.js" type="text/javascript"></script>
+</body>
+</html>
